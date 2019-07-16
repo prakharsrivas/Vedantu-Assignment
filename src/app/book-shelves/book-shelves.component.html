@@ -1,0 +1,33 @@
+<div class="row float-right">
+  <div class="col-sm-2">
+    <button routerLink="/addbook" mat-fab aria-label="Click to add Book">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</div>
+<div *ngFor="let shelves of routesObject | keyvalue">
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>{{shelves.key}}</h4>
+      <div *ngFor="let book of shelves.value | keyvalue">        
+        <mat-card class="example-card col-sm-2 float-left">
+          <img mat-card-image [src]="book.value.bookCover?book.value.bookCover:'../assets/defaultCover.png'" alt="">
+          <mat-card-header>
+            <mat-card-title>{{book.value.bookTitle}}</mat-card-title>
+            <mat-card-subtitle>{{book.value.bookDescription}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-actions>
+            <button mat-mini-fab color="primary" mat-raised-button mat-button [matMenuTriggerFor]="menu">
+                <mat-icon>arrow_drop_down</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item value="currently_reading" (click)="changeCategory(shelves.key,book.key,'currently_reading')">Currently Reading</button>
+              <button mat-menu-item value="read" (click)="changeCategory(shelves.key,book.key,'read')" >Read</button>
+              <button mat-menu-item value="want_to_read" (click)="changeCategory(shelves.key,book.key,'want_to_read')" >Want to Read</button>
+            </mat-menu>
+          </mat-card-actions>
+        </mat-card>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="example-container">
+  <h3>Add Book </h3>
+  <form class="add-form"  [formGroup]="addbookForm">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Enter Book Title" formControlName="bookTitle">
+  </mat-form-field>
+
+  <mat-form-field class="full-width">
+    <textarea matInput placeholder="Book Description" formControlName="bookDescription"></textarea>
+  </mat-form-field>
+
+  <mat-form-field class="full-width" >
+    <mat-select placeholder="Select" formControlName="category">
+      <mat-option value="currently_reading">Current Reading</mat-option>
+      <mat-option value="want_to_read">Want to Read</mat-option>
+      <mat-option value="read">Read</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="row">
+      <div class="col-sm-6">
+          <a routerLink="/"><button mat-raised-button >Back</button></a>
+          </div>
+    <div class="col-sm-6">
+  <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+  </div>
+
+  </div>
+  </form>
+</div>

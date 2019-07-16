@@ -1,0 +1,53 @@
+{
+    "currently_reading": {
+        "1001": {
+            "bookTitle": "The way in the Forest",
+            "bookDescription":"1002",
+            "bookCover":"../assets/book1.jpg"
+        },
+        "1002": {
+            "bookTitle": "A Super Hero to save the World",
+            "bookDescription":"1002",
+            "bookCover":"../assets/book2.jpg"
+        },
+        "1003": {
+            "bookTitle": "Before She knew him",
+            "bookDescription":"1003",
+            "bookCover":"../assets/before-she-knew-him.jpg"
+        }
+    },
+    "want_to_read": {
+        "1004": {
+            "bookTitle": "B552eta",
+            "bookDescription":"1004",
+            "bookCover":"../assets/book1.jpg"
+        },
+        "1005": {
+            "bookTitle": "A Super Hero to save the World",
+            "bookDescription":"1005",
+            "bookCover":"../assets/book2.jpg"
+        },
+        "1006": {
+            "bookTitle": "prakhar",
+            "bookDescription":"1006",
+            "bookCover":"../assets/book3.jpg"
+        }
+    },
+    "read": {
+        "1007":{
+                "bookTitle": "The way in the Forest",
+                "bookDescription":"1007",
+                "bookCover":"../assets/book1.jpg"
+            },
+        "1008":{
+            "bookTitle": "A Super Hero to save the World",
+            "bookDescription":"1008",
+            "bookCover":"../assets/book2.jpg"
+        },
+        "1009":{
+            "bookTitle": "prakhar",
+            "bookDescription":"1009",
+            "bookCover":"../assets/book3.jpg"
+        }
+    }
+}
